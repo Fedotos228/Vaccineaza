@@ -2342,6 +2342,7 @@ input {
 .photo-slider__slider .slider-photo-controls__arrows .slider-arrow__prev i {
   transform: rotate(180deg);
 }
+
 .hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
