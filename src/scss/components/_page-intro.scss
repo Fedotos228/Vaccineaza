@@ -2,7 +2,7 @@
   @include adaptiv-value("padding-top", 40, 20, 1);
   @include adaptiv-value("padding-bottom", 40, 20, 1);
   background-color: $white;
-  i {
+  .page-intro__icon {
     display: block;
     width: fit-content;
     margin: 0 auto;

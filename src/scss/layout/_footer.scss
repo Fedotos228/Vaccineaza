@@ -6,6 +6,55 @@
     padding: 48px 0;
     background-color: $white;
 
+    .disclaimer {
+        @include border-rounded-shadow($gray-stroke, 0, #FF9F9F);
+        font-size: 14px;
+        text-align: center;
+        margin-top: 24px;
+        padding: 20px;
+
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 12px;
+
+            h5 {
+                color: $maincolor;
+            }
+
+            .line {
+                position: relative;
+                border-width: 1px;
+                flex: 1 auto;
+                border-style: solid;
+                color: #FF9F9F;
+                &::after{
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -10px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #FF9F9F;
+                }
+                &:last-child{
+                    &::after{
+                        left: -10px;
+                    }
+                }
+            }
+        }
+
+        p {
+            color: $text-secondary;
+            font-size: 14px
+        }
+    }
+
     &__wrapper {
         @include grid(12, 24px);
 
@@ -28,7 +77,7 @@
             .footer-content {
                 margin-bottom: 12px;
             }
-            
+
             &-title {
                 margin-bottom: 4px;
             }

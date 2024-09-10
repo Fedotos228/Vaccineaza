@@ -583,6 +583,50 @@ input {
   padding: 48px 0;
   background-color: #FFFFFF;
 }
+.footer .disclaimer {
+  border-radius: 0;
+  box-shadow: #FF9F9F 4px 4px 0px;
+  border: 1px solid #ECECEC;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 24px;
+  padding: 20px;
+}
+.footer .disclaimer-title {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+.footer .disclaimer-title h5 {
+  color: #262626;
+}
+.footer .disclaimer-title .line {
+  position: relative;
+  border-width: 1px;
+  flex: 1 auto;
+  border-style: solid;
+  color: #FF9F9F;
+}
+.footer .disclaimer-title .line::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FF9F9F;
+}
+.footer .disclaimer-title .line:last-child::after {
+  left: -10px;
+}
+.footer .disclaimer p {
+  color: #757A89;
+  font-size: 14px;
+}
 .footer__wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -1693,7 +1737,7 @@ input {
 }
 .videos-card img {
   width: 100%;
-  height: auto;
+  object-fit: cover;
 }
 .videos-card i {
   position: absolute;
@@ -1704,8 +1748,23 @@ input {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   padding: 20px;
+  padding: 20px;
   z-index: 10;
   font-size: 30px;
+}
+@media (max-width: 1128px) {
+  .videos-card i {
+    padding: calc(
+                15px + 5 * ((100vw - 320px) / 808)
+            );
+  }
+}
+@media (max-width: 1128px) {
+  .videos-card i {
+    font-size: calc(
+                16px + 14 * ((100vw - 320px) / 808)
+            );
+  }
 }
 .videos-card h5 {
   position: absolute;
@@ -1721,6 +1780,16 @@ input {
 }
 .videos-card:hover h5 {
   background-color: rgba(0, 122, 255, 0.5);
+}
+.videos-card.intro img {
+  height: 630px;
+}
+@media (max-width: 1128px) {
+  .videos-card.intro img {
+    height: calc(
+                380px + 250 * ((100vw - 320px) / 808)
+            );
+  }
 }
 
 .link-card {
@@ -1985,7 +2054,7 @@ input {
             );
   }
 }
-.page-intro i {
+.page-intro .page-intro__icon {
   display: block;
   width: fit-content;
   margin: 0 auto;
@@ -1997,7 +2066,7 @@ input {
   margin-bottom: 12px;
   transition: 0.2s ease-in-out;
 }
-.page-intro i:hover {
+.page-intro .page-intro__icon:hover {
   border-color: #007AFF;
 }
 .page-intro h1 {
@@ -2233,7 +2302,63 @@ input {
   }
 }
 
+.hero-slider__slider {
+  position: relative;
+  border-radius: 0;
+  box-shadow: #BAD5F3 4px 4px 0px;
+  border: 1px solid transparent;
+  grid-column: 1/span 12;
+  height: 450px;
+}
+.hero-slider__slider .slider-hero__body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+}
+.hero-slider__slider .slider-hero__body .slider-hero__slide {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 60px;
+  padding-inline: 90px;
+}
+@media (max-width: 1128px) {
+  .hero-slider__slider .slider-hero__body .slider-hero__slide {
+    padding-inline: calc(
+                30px + 60 * ((100vw - 320px) / 808)
+            );
+  }
+}
+.hero-slider__slider .slider-hero__body .slider-hero__slide h3 {
+  text-align: center;
+  color: #FFF;
+  margin-bottom: 24px;
+}
+.hero-slider__slider .slider-hero-controls {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.hero-slider__slider .slider-hero-controls__dots {
+  display: block;
+  margin: 0 auto;
+  transform: translateX(0) !important;
+}
+.hero-slider__slider .slider-hero-controls__dots .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.hero-slider__slider .slider-hero-controls__dots .swiper-pagination-bullet-active {
+  background-color: #FFF;
+}
+
 .benefits-slider__slider {
+  display: grid;
   background-color: #F2F8FF;
   border-radius: 0;
   box-shadow: #BAD5F3 4px 4px 0px;
@@ -2252,7 +2377,6 @@ input {
     grid-row: 3;
   }
 }
-
 .benefits-slider__slider .slider-benefits__body .slider-benefits__slide .title {
   font-size: 20px;
   padding-bottom: 16px;
@@ -2659,4 +2783,13 @@ input {
   .social-share {
     display: none;
   }
+}
+
+.video-gallery {
+  padding: 50px 0;
+}
+.video-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
 }

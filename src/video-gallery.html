@@ -6,10 +6,55 @@
   @@include('./components/header.html')
   <main>
     <div class="page-intro">
-      <i class="icon-video-camera"></i>
-      <h1>
-        Video Galerie
-      </h1>
+      <div class="__container">
+        <i class="page-intro__icon icon-video-camera"></i>
+        <h1>
+          Video Galerie
+        </h1>
+
+        @@include('./components/cards/video-card.html', {
+          'img': 'hpv-thumbnail.png',
+          'alt': 'HPV',
+          'title': 'Prin ce se diferențiază HPV',
+          'type-card': 'intro',
+        })
+      </div>
+    </div>
+    <div class='video-gallery'>
+      <div class="__container">
+        <div class="video-gallery__grid">
+          @@include('./components/cards/video-card.html', {
+            'img': 'hpv-thumbnail.png',
+            'alt': 'HPV',
+            'title': 'Prin ce se diferențiază HPV',
+            'type-card': '',
+          })
+          @@include('./components/cards/video-card.html', {
+            'img': 'hpv-thumbnail.png',
+            'alt': 'HPV',
+            'title': 'Prin ce se diferențiază HPV',
+            'type-card': '',
+          })
+          @@include('./components/cards/video-card.html', {
+            'img': 'hpv-thumbnail.png',
+            'alt': 'HPV',
+            'title': 'Prin ce se diferențiază HPV',
+            'type-card': '',
+          })
+          @@include('./components/cards/video-card.html', {
+            'img': 'hpv-thumbnail.png',
+            'alt': 'HPV',
+            'title': 'Prin ce se diferențiază HPV',
+            'type-card': '',
+          })
+          @@include('./components/cards/video-card.html', {
+            'img': 'hpv-thumbnail.png',
+            'alt': 'HPV',
+            'title': 'Prin ce se diferențiază HPV',
+            'type-card': '',
+          })
+        </div>
+      </div>
     </div>
   </main>
   @@include('./components/footer.html')

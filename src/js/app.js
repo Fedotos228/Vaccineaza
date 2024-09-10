@@ -21,6 +21,19 @@ if (document.querySelectorAll('[data-dropdown]')) {
 }
 
 
+new Swiper(".slider-hero__body", {
+    effect: "fade",
+    speed: 800,
+    touchRatio: 1,
+    simulateTouch: true,
+    preloadImages: false,
+    lazy: true,
+    pagination: {
+        el: ".slider-hero-controls__dots",
+        dynamicBullets: true,
+    },
+})
+
 new Swiper(".slider-benefits__body", {
     pagination: {
         el: ".slider-benefits-controls__dots",

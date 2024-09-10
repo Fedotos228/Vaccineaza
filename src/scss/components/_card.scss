@@ -463,7 +463,7 @@
 
     img {
         width: 100%;
-        height: auto;
+        object-fit: cover;
     }
 
     i {
@@ -475,8 +475,9 @@
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 50%;
         padding: 20px;
+        @include adaptiv-value("padding", 20, 15, 1);
         z-index: 10;
-        font-size: 30px;
+        @include adaptiv-value("font-size", 30, 16, 1);
     }
     h5 {
         position: absolute;
@@ -493,6 +494,12 @@
     &:hover {
         h5 {
             background-color: rgba(0, 122, 255, 0.5);
+        }
+    }
+
+    &.intro {
+        img {
+            @include adaptiv-value("height", 630, 380, 1);
         }
     }
 }
