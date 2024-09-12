@@ -100,5 +100,8 @@ function animateIllustrations(wrapper, elements) {
     });
   });
 }
-animateIllustrations(leftIllustrationsWrapper, leftIllustrations);
-animateIllustrations(rightIllustrationsWrapper, rightIllustrations);
+
+if(leftIllustrationsWrapper && rightIllustrationsWrapper) {
+  animateIllustrations(leftIllustrationsWrapper, leftIllustrations);
+  animateIllustrations(rightIllustrationsWrapper, rightIllustrations);
+}

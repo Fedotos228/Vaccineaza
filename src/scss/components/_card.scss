@@ -2,6 +2,7 @@
 // Calendar Card
 .calendar__card {
     @include grid(12, 24px);
+    place-items: center;
     padding: 32px;
     height: 100%;    
     background-color: $main-aliceblue;
@@ -182,11 +183,24 @@
 }
 
 .medapp__card {
+    max-height: 100px;
     background-color: $yellow-bg;
     @include border-rounded-shadow($yellow-bg, 0px, $yellow-shadow);
 
+    p {
+        text-align: left;
+    }
+
     &-text {
         text-decoration: underline;
+        transition: .3s ease-in-out;
+    }
+
+    &-subtext {
+        margin-top: 5px;
+        font-size: 13px;
+        line-height: 22px;
+        color: $text-secondary;
     }
 
     @media (max-width: $tablet) {

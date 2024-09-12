@@ -25,19 +25,18 @@
 
             .line {
                 position: relative;
-                border-width: 1px;
                 flex: 1 auto;
-                border-style: solid;
-                color: #FF9F9F;
+                height: 1px;
+                background-color: #FF9F9F;
                 &::after{
                     display: block;
                     content: '';
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
-                    right: -10px;
-                    width: 10px;
-                    height: 10px;
+                    right: 0px;
+                    width: 7px;
+                    height: 7px;
                     border-radius: 50%;
                     background-color: #FF9F9F;
                 }

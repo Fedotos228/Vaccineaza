@@ -46,7 +46,6 @@
 }
 
 .benefits-slider__slider {
-    display: grid;
     background-color: $main-aliceblue;
     @include border-rounded-shadow(transparent, 0, $blue-shadow);
     padding: 16px;
@@ -63,6 +62,7 @@
             .title {
                 font-size: 20px;
                 padding-bottom: 16px;
+                text-align: center;
             }
 
             .img {
@@ -74,6 +74,7 @@
 
             .description {
                 font-size: 16px;
+                text-align: center;
             }
         }
     }
@@ -149,9 +150,7 @@
 
             .slider-arrow {
                 &__prev {
-                    i {
-                        transform: rotate(180deg);
-                    }
+                    transform: rotate(180deg);
                 }
             }
         }

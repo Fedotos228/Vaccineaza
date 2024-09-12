@@ -1,6 +1,10 @@
 .articles {
     margin: 0 30px;
 
+    iframe {
+        width: 100%;
+    }
+
     @media (max-width: $tablet) {
         margin: unset;
     }
