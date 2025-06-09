@@ -3,73 +3,81 @@
 @@include('./components/head.html', {'title': 'Articole'})
 
 <body>
-  @@include('./components/header.html')
-  <main>
-    <div class="__container">
-        <div class="articles">
-            <aside class="social-share social-links">
-                <div class="social-share__wrapper">
-                    <a href="#" class="social-links__item">
-                        <img src="@img/icons/facebook.svg" alt="Facebook" class="social-links__icon" />
-                    </a>
-                    <a href="#" class="social-links__item">
-                        <img src="@img/icons/facebook.svg" alt="LinkedIn" class="social-links__icon" />
-                    </a>
-                    <a href="#" class="social-links__item">
-                        <img src="@img/icons/facebook.svg" alt="Telegram" class="social-links__icon" />
-                    </a>
-                    <a href="#" class="social-links__item">
-                        <img src="@img/icons/facebook.svg" alt="Link" class="social-links__icon" />
-                    </a>
-                </div>
-            </aside>
+    @@include('./components/header.html')
+    <main>
+        <div class="__container">
+            <div class="articles">
+                <aside class="social-share social-links">
+                    <div class="social-share__wrapper">
+                        <a href="#" class="social-links__item">
+                            <img src="@img/icons/facebook.svg" alt="Facebook" class="social-links__icon" />
+                        </a>
+                        <a href="#" class="social-links__item">
+                            <img src="@img/icons/facebook.svg" alt="LinkedIn" class="social-links__icon" />
+                        </a>
+                        <a href="#" class="social-links__item">
+                            <img src="@img/icons/facebook.svg" alt="Telegram" class="social-links__icon" />
+                        </a>
+                        <a href="#" class="social-links__item">
+                            <img src="@img/icons/facebook.svg" alt="Link" class="social-links__icon" />
+                        </a>
+                    </div>
+                </aside>
 
-            <section class="banner">
-                <img
-                class="banner__img"
-                src="@img/tubic-front.png"
-                alt="HPV"
-                width="1128"
-                height="630">
-            </section>
+                <section class="banner">
+                    <img class="banner__img" src="@img/tubic.png" alt="HPV" width="1128" height="630">
+                </section>
 
-            <!-- Article with Image and Date -->
-            <article class="article">
-                <header class="article-header article-header__top article-header__date">
-                <span class="date-details">
-                    <i class="icon-calendar"></i>
-                    <time datetime="2024-08-12">2 septembrie 2024</time>
-                </span>
-                <h3>Ce reprezintă tuberculoza?</h3>
-                </header>
-                <div class="article-body">
-                    <p>
-                        Tuberculoza este o boală infecțioasă, care afectează, îndeosebi, organele respiratorii. Tuberculoza (TB) este cauzată de bacteria Mycobacterium tuberculosis, care afectează, de regulă, plămânii, dar poate afecta şi alte organe, inclusiv oasele, articulaţiile, ochii, rinichii şi creierul. Infecția se transmite pe calea aerului, prin inhalarea bacteriei dispersate prin tuse sau depuse pe suprafețe prin expectorat. Mai exact, infectarea se realizează prin inspirarea picăturilor de secreții ce conțin micobacterii de tuberculoză, eliminate în aer de către bolnav prin tuse, strănut, scuipat sau în timpul vorbirii în condiții de contact apropiat. 
-                    </p>
-                    <p>
-                        Tuberculoza se supune greu tratamentului (luni/ani), frecvent duce la invaliditate şi deces. Tuberculoza reprezintă un pericol major pentru bebelușii nevaccinați, la care poate evolua sub formă de meningită sau septicemie tuberculoasă, care are consecințe grave. În pofida progreselor semnificative în reducerea mortalității din ultimele decenii prin diagnostic și tratament îmbunătățit, Tuberculoza provoacă în continuare suferință, o povară economică majoră și este una dintre principalele cauze de deces din cauza rezistenței antimicrobiene. În fiecare an, tuberculoza curmă viața a circa 1,6 milioane de oameni.
-                    </p>
-                </div>
-            </article>
+                <!-- Article with Image and Date -->
+                <article class="article">
+                    <header class="article-header article-header__top article-header__date">
+                        <span class="date-details">
+                            <i class="icon-calendar"></i>
+                            <time datetime="2024-08-12">2 septembrie 2024</time>
+                        </span>
+                        <h3>Ce reprezintă Tuberculoza?</h3>
+                    </header>
+                    <div class="article-body">
+                        <p>
+                            Tuberculoza este o boală infecțioasă, care afectează, îndeosebi, organele respiratorii.
+                            Tuberculoza (TB) este cauzată de bacteria Mycobacterium tuberculosis, care afectează, de
+                            regulă, plămânii, dar poate afecta şi alte organe, inclusiv oasele, articulaţiile, ochii,
+                            rinichii şi creierul. Infecția se transmite pe calea aerului, prin inhalarea bacteriei
+                            dispersate prin tuse sau depuse pe suprafețe prin expectorat. Mai exact, infectarea se
+                            realizează prin inspirarea picăturilor de secreții ce conțin micobacterii de tuberculoză,
+                            eliminate în aer de către bolnav prin tuse, strănut, scuipat sau în timpul vorbirii în
+                            condiții de contact apropiat.
+                        </p>
+                        <p>
+                            Tuberculoza se supune greu tratamentului (luni/ani), frecvent duce la invaliditate şi deces.
+                            Tuberculoza reprezintă un pericol major pentru bebelușii nevaccinați, la care poate evolua
+                            sub formă de meningită sau septicemie tuberculoasă, care are consecințe grave. În pofida
+                            progreselor semnificative în reducerea mortalității din ultimele decenii prin diagnostic și
+                            tratament îmbunătățit, Tuberculoza provoacă în continuare suferință, o povară economică
+                            majoră și este una dintre principalele cauze de deces din cauza rezistenței antimicrobiene.
+                            În fiecare an, tuberculoza curmă viața a circa 1,6 milioane de oameni.
+                        </p>
+                    </div>
+                </article>
 
-            <!-- Article with Huge Video Component -->
-            <article class="article">
-                <header class="article-header">
-                    <h3>Simptomele generale ale bolii</h3>
-                </header>
-                <div class="article-body">
-                    <div class='flex'>
+                <!-- Article with Huge Video Component -->
+                <article class="article">
+                    <header class="article-header">
+                        <h3>Simptomele generale ale bolii</h3>
+                    </header>
+                    <div class="article-body">
                         <div>
                             <p>
-                                Simptomele tuberculozei variază în funcție de organul afectat. În regiunea europeană OMS, aproximativ 75 % din cazuri sunt de tuberculoză pulmonară. Simptomele tipice sunt:
+                                Simptomele tuberculozei variază în funcție de organul afectat. În regiunea europeană
+                                OMS, aproximativ 75 % din cazuri sunt de tuberculoză pulmonară. Simptomele tipice sunt:
                             </p>
-                
+
                             <ol>
                                 <li>
-                                    tuse persistentă (mai mult de 2 săptămâni)  
+                                    tuse persistentă (mai mult de 2 săptămâni)
                                 </li>
                                 <li>
-                                    febră 
+                                    febră
                                 </li>
                                 <li>
                                     transpirații nocturne
@@ -77,172 +85,256 @@
                                 <li>scădere în greutate</li>
                             </ol>
                         </div>
-                        <img src="@img/Droplets.png" alt="droplets" style='width: 350px; height: 250px;'>
+
+                        <p>
+                            Bacteriile tuberculozei pot infecta uneori o persoană fără să provoace boala. În aceste
+                            cazuri, deși persoana este infectată cu bacilul tuberculozei, nu are niciun simptom (nu este
+                            bolnavă) și nu poate transmite boala. Totuși, prezența bacteriilor înseamnă că, fără
+                            tratament adecvat, este expusă riscului de a se îmbolnăvi și de a transmite bacteria altor
+                            persoane.
+                        </p>
                     </div>
-                
-                    <p>
-                        Bacteriile tuberculozei pot infecta uneori o persoană fără să provoace boala. În aceste cazuri, deși persoana este infectată cu bacilul tuberculozei, nu are niciun simptom (nu este bolnavă) și nu poate transmite boala. Totuși, prezența bacteriilor înseamnă că, fără tratament adecvat, este expusă riscului de a se îmbolnăvi și de a transmite bacteria altor persoane. 
-                    </p>
-                </div>
-            </article>
+                </article>
 
-            <!-- Article with Only Content -->
-            <article class="article">
-                <header class="article-header">
-                  <h3>Prevenirea tuberculozei prin vaccinare</h3>
-                </header>
-                <div class="article-body">
-                  <p>
-                    Tuberculoza poate fi prevenită prin vaccinare! Vaccinul împotriva tuberculozei administrat la începutul vieții asigură un nivel ridicat de protecție, în special împotriva formelor severe de tuberculoză și meningită tuberculoasă în copilărie. Vaccinarea neonatală de rutină este recomandată de OMS în țările cu prevalență moderată până la severă a tuberculozei. Contextul epidemiologic de risc din Republica Moldova este caracterizat de o incidență înaltă pentru Tuberculoza organelor respiratorii, astfel, pe parcursul anului 2022 au fost înregistrate 1.411 cazuri noi, dintre care - 64 la copii.
-                  </p>
-                </div>
-            </article>
+                <!-- Article with Only Content -->
+                <article class="article">
+                    <header class="article-header">
+                        <h3>Prevenirea tuberculozei prin vaccinare</h3>
+                    </header>
+                    <div class="article-body">
+                        <p>
+                            Tuberculoza poate fi prevenită prin vaccinare! Vaccinul împotriva tuberculozei administrat
+                            la începutul vieții asigură un nivel ridicat de protecție, în special împotriva formelor
+                            severe de tuberculoză și meningită tuberculoasă în copilărie. Vaccinarea neonatală de rutină
+                            este recomandată de OMS în țările cu prevalență moderată până la severă a tuberculozei.
+                            Contextul epidemiologic de risc din Republica Moldova este caracterizat de o incidență
+                            înaltă pentru Tuberculoza organelor respiratorii, astfel, pe parcursul anului 2022 au fost
+                            înregistrate 1.411 cazuri noi, dintre care - 64 la copii.
+                        </p>
+                    </div>
+                </article>
 
-            <!-- Article with Content Only -->
-            <article class="article">
-                <header class="article-header">
-                    <h3>Când se administrează vaccinul?</h3>
-                </header>
-                <div class="article-body">
-                    <p>
-                        În Republica Moldova, vaccinarea împotriva Tuberculozei (BCG) este recomandată într-o singură doză pentru toți copiii, în primele 2-5 zile de la naștere. Doza de vaccinare pentru copiii de până la  1 an şi nou-născuţi constituie 0,05 ml, iar pentru copiii de peste 1 an şi adulţi - 0,1 ml. Vaccinul se administrează intradermic, într-o singură doză.
-                    </p>
-                    <p>
-                        Vaccinul BCG se poate administra şi adulţilor, cu vârsta între 16 şi 35 de ani, care sunt expuşi riscului de tuberculoză, cum ar fi cei ce lucrează în domeniul sănătăţii, personalul veterinar sau lucrătorii de la abator.
-                    </p>
-                    <p>
-                        În Republica Moldova, pentru prevenirea formelor severe, se recomandată vaccinarea cu o singură doză pentru bebelușii sănătoși, cu greutatea minimă 2.000 g, la a 2-5 zi de la naștere. În cazul în care vaccinarea este efectuată tardiv, la o vârstă mai mare de două luni, atunci se recomandată testul cutanat la tuberculinum - o metodă de detectare a infecției TB care implică injectarea intradermică a derivatului proteic purificat cu tuberculină. Vor fi supuşi vaccinării copiii care prezintă peste 72 ore o reacţie tuberculinică sub formă de infiltrat cu dimensiunile 0-4mm sau hiperemie de orice dimensiune.
-                    </p>
-                    <iframe height="550" src="https://www.youtube.com/embed/VkjfHAaovg4?si=ReCI_aVs9YmH4uCS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p>
-                        OMS recomandă administrarea unei singure doze de BCG la sugari, la scurt timp după naștere, în țările cu incidență mare a Tuberculozei, așa cum este și Republica Moldova. În statele cu incidență scăzută din Europa, America de Nord și Australia, imunizarea de rutină universală cu BCG a fost înlocuită în ultimele decenii cu o abordare țintită cu imunizare limitată la nou-născuți și sugari cu risc crescut pentru imigranți și în calitate de vaccin de călătorie.
-                    </p>
-                </div>
-            </article>
+                <!-- Article with Content Only -->
+                <article class="article">
+                    <header class="article-header">
+                        <h3>Când se administrează vaccinul?</h3>
+                    </header>
+                    <div class="article-body">
+                        <p>
+                            În Republica Moldova, vaccinarea împotriva Tuberculozei (BCG) este recomandată într-o
+                            singură doză pentru toți copiii, în primele 2-5 zile de la naștere. Doza de vaccinare pentru
+                            copiii de până la 1 an şi nou-născuţi constituie 0,05 ml, iar pentru copiii de peste 1 an şi
+                            adulţi - 0,1 ml. Vaccinul se administrează intradermic, într-o singură doză.
+                        </p>
+                        <p>
+                            Vaccinul BCG se poate administra şi adulţilor, cu vârsta între 16 şi 35 de ani, care sunt
+                            expuşi riscului de tuberculoză, cum ar fi cei ce lucrează în domeniul sănătăţii, personalul
+                            veterinar sau lucrătorii de la abator.
+                        </p>
+                        <p>
+                            În Republica Moldova, pentru prevenirea formelor severe, se recomandată vaccinarea cu o
+                            singură doză pentru bebelușii sănătoși, cu greutatea minimă 2.000 g, la a 2-5 zi de la
+                            naștere. În cazul în care vaccinarea este efectuată tardiv, la o vârstă mai mare de două
+                            luni, atunci se recomandată testul cutanat la tuberculinum - o metodă de detectare a
+                            infecției TB care implică injectarea intradermică a derivatului proteic purificat cu
+                            tuberculină. Vor fi supuşi vaccinării copiii care prezintă peste 72 ore o reacţie
+                            tuberculinică sub formă de infiltrat cu dimensiunile 0-4mm sau hiperemie de orice
+                            dimensiune.
+                        </p>
+                        <iframe height="550" src="https://www.youtube.com/embed/VkjfHAaovg4?si=ReCI_aVs9YmH4uCS"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>
+                            OMS recomandă administrarea unei singure doze de BCG la sugari, la scurt timp după naștere,
+                            în țările cu incidență mare a Tuberculozei, așa cum este și Republica Moldova. În statele cu
+                            incidență scăzută din Europa, America de Nord și Australia, imunizarea de rutină universală
+                            cu BCG a fost înlocuită în ultimele decenii cu o abordare țintită cu imunizare limitată la
+                            nou-născuți și sugari cu risc crescut pentru imigranți și în calitate de vaccin de
+                            călătorie.
+                        </p>
+                    </div>
+                </article>
 
-            <!-- Article with Quotes and Author -->
-            <article class="article">
-                <header class="article-header">
-                    <h3>Cum acționează vaccinul?</h3>
-                </header>
-                <div class="article-body">
-                    <p>
-                        Vaccinul BCG conține micobacterii vii atenuate (Calmett-Guerin) ce determină activarea imunității celulare în organism, determinând o protecție de lungă durată. Vaccinul se administrează cât mai curând după naștere pentru a asigura un nivel înalt de protecție contra formelor severe de tuberculoză și meningită tuberculoasă. 
-                    </p>
-                    <p>
-                        Deoarece tulpinile din vaccin sunt atenuate, declanşează sistemul imunitar să producă anticorpi împotriva bacteriei care poate produce TBC, însă nu va determina apariţia acestei boli. De asemenea, vaccinul oferă protecţie consecventă împotriva celor mai severe forme de tuberculoză, cum ar fi meningita la copii.
-                    </p>
-                </div>
-            </article>
-            <article class="article">
-                <header class="article-header">
-                    <h3>Eficacitatea vaccinului</h3>
-                </header>
-                <div class="article-body">
-                    <p>
-                        Vaccinul BCG a demonstrat în mod constant o eficacitate de protecție ridicată (peste 70%) împotriva formelor diseminate de Tuberculoză, inclusiv meningită tuberculoasă și Tuberculoză miliară. În plus, dovezile din studiile recente sugerează că BCG protejează, de asemenea, împotriva infecției TBC și a progresiei de la infecție la boală. Pe lângă protecția împotriva infecțiilor micobacteriene, tot mai multe dovezi indică faptul că vaccinul BCG are un efect protector împotriva virusurilor, bacteriilor și paraziților prin activarea limfocitelor heterologe, creșterea imunității înnăscute și a producției de citokine.
-                    </p>
-                    <p>
-                        Vaccinarea este cea mai utilă metodă de prevenție. Vaccinul BCG este administrat la 80% dintre copiii lumii, în primul rând, în țările cu o prevalență crescută a TBC. Eficacitatea medie generală este probabil de doar 50%. BCG reduce în mod clar rata TB extratoracică la copii, în special meningita TB și poate preveni infecția TB.
-                    </p>
-                </div>
-            </article>
-            <article class="article">
-                <header class="article-header">
-                    <h3>Ce conţine vaccinul BCG?</h3>
-                </header>
-                <div class="article-body">
-                    <p>
-                        Vaccinul BCG conţine tulpina Calmette Guerin de Mycobacterium Bovis viu atenuat (o tulpină slăbită), având o eficacitate între 0 şi 80%. Pe lângă tulpina de virus viu atenuat, vaccinul conţine şi glicerină, asparagină, acid citric, potasiu, fosfat, sulfat de magneziu şi citrat de fier, amoniu. Prepararea finală include şi conţinutul de lactoză. Aceste ingrediente adăugate sunt în concentraţii foarte mici, urme din aceste substanţe, şi nu sunt responsabile pentru apariţia unor afecţiuni.
-                    </p>
-                </div>
-            </article>
-            <article class="article">
-                <header class="article-header">
-                    <h3>Beneficiile administrării vaccinului BCG</h3>
-                </header>
-                <div class="article-body">
-                    <p>
-                        Scăderea mortalităţii în urma contractării bolilor infecţioase este rezultatul progreselor realizate în domeniul medical, prin descoperirea vaccinării ca mijloc de prevenţie primară a îmbolnăvirilor.
-                    </p>
-                    <img src="@img/copil.png" alt="copil">
-                    <strong>credit foto: OMS Moldova</strong>
-                    <p>
-                        Un număr foarte mare de boli pot fi prevenite prin vaccinarea de rutină a copilului. Introducerea, în ultimii ani, pe scară largă, a schemelor de vaccinare şi, prin urmare, şi a vaccinului BCG, a dus la scăderea dramatică a cazurilor de îmbolnăvire şi deces în urma infectării.
-                    </p>
-                </div>
-            </article>
-            <article class="article">
-                <header class="article-header">
-                    <h3>Riscurile întârzierii sau a refuzului vaccinării</h3>
-                </header>
-                <div class="article-body">
-                    <p>
-                        Datorită imunităţii de turmă, atât timp cât o mare majoritate a oamenilor este imunizată în orice populaţie, chiar şi minoritatea neimunizată va fi protejată. Cu atât de mulţi oameni protejaţi, o boală infecţioasă nu va avea niciodată şansa de a se manifesta şi de a se răspândi. Acest lucru este foarte important deoarece întotdeauna va exista o parte din populaţie (sugari, femei însărcinate, vârstnici şi persoane cu un sistem imunitar slăbit) căreia nu i se poate administra vaccinuri.
-                    </p>
-                    <p>
-                        Datorită imunităţii de turmă, atât timp cât o mare majoritate a oamenilor este imunizată în orice populaţie, chiar şi minoritatea neimunizată va fi protejată. Cu atât de mulţi oameni protejaţi, o boală infecţioasă nu va avea niciodată şansa de a se manifesta şi de a se răspândi. Acest lucru este foarte important deoarece întotdeauna va exista o parte din populaţie (sugari, femei însărcinate, vârstnici şi persoane cu un sistem imunitar slăbit) căreia nu i se poate administra vaccinuri.
-                    </p>
-                    <p>
-                        Nu trebuie să uităm câte decese şi câte boli au prevenit vaccinurile şi nici cum continuă să ne protejeze de formele potenţial devastatoare, motiv pentru care nu avem voie să întârziem sau să refuzăm vaccinurile.
-                    </p>
-                </div>
-            </article>
-            <article class="article">
-                <header class="article-header">
-                    <h3>Posibile reacții adverse</h3>
-                </header>
-                <div class="article-body">
-                    <p>
-                        Ca orice medicament injectabil, vaccinul BCG poate produce durere și iritație la locul injectării. Efectele secundare cele mai frecvent întâlnite sunt:
-                    </p>
-                    <ol>
-                        <li>
-                            apariţia unei papule mici, roşii, la locul injectării, de obicei în 10-14 zile;
-                        </li>
-                        <li>
-                            noduli în primele 7-21 de zile;
-                        </li>
-                        <li>
-                            adenita supurată (inflamarea ganglionilor limfatici);
-                        </li>
-                        <li>
-                            simptome asemănătoare gripei, timp de 24-48 de ore după vaccinare.
-                        </li>
-                    </ol>
-                </div>
-            </article>
-            <article class="article">
-                <header class="article-header">
-                    <h3>Cum s-a dezvoltat vaccinul?</h3>
-                </header>
-                <div class="article-body">
-                    <p>
-                        Vaccinul Bacille Callmette-Guérin (BCG) este unul dintre cele mai vechi și mai frecvent administrate vaccinuri la nivel mondial. Vaccinul a fost dezvoltat de Albert Calmette și Camille Guérin la începutul anilor 1900 prin atenuarea unei tulpini de Mycobacterium bovis – o micobacterie strâns legată de Mycobacterium tuberculosis, care cauzează tuberculoza bovină (TB). Prima utilizare a vaccinului BCG la om în 1921 a fost cu mult înainte ca studiile preclinice și clinice standardizate să fie necesare. Prima dată când vaccinul BCG a fost utilizat la oameni a fost la un copil a cărui mamă murise de TBC la doar câteva ore după naștere. Copilul a fost hrănit cu un amestec de lapte și BCG oral în ziua 3, 5 și 7 după naștere și a rămas bine în următoarele șase luni. 
-                    </p>
-                    <iframe height="550" src="https://www.youtube.com/embed/3ETVAm-mjVo?si=C6Q6AEeCkgWHIigZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p>
-                        Încurajați de acest lucru, alți sugari cu și fără expunere la Tuberculoză au primit BCG în Franța, cu o urmărire de până la 4 ani, fără dovezi de efecte adverse. Acest lucru a dus la producția în masă de vaccin BCG la Institutul Pasteur din Lille (Franța), iar Calmette și colegii de muncă au imunizat ulterior peste 52.000 de copii cu vaccinul BCG în Franța, între anii 1924 și 1927. Dintre ei, peste 6000 s-au născut în familii cu cazuri de TBC și Calmette a raportat că BCG a redus mortalitatea TB la sugari de la 25% la mai puțin de 1%. 
-                    </p>
-                </div>
-            </article>
+                <!-- Article with Quotes and Author -->
+                <article class="article">
+                    <header class="article-header">
+                        <h3>Cum acționează vaccinul?</h3>
+                    </header>
+                    <div class="article-body">
+                        <p>
+                            Vaccinul BCG conține micobacterii vii atenuate (Calmett-Guerin) ce determină activarea
+                            imunității celulare în organism, determinând o protecție de lungă durată. Vaccinul se
+                            administrează cât mai curând după naștere pentru a asigura un nivel înalt de protecție
+                            contra formelor severe de tuberculoză și meningită tuberculoasă.
+                        </p>
+                        <p>
+                            Deoarece tulpinile din vaccin sunt atenuate, declanşează sistemul imunitar să producă
+                            anticorpi împotriva bacteriei care poate produce TBC, însă nu va determina apariţia acestei
+                            boli. De asemenea, vaccinul oferă protecţie consecventă împotriva celor mai severe forme de
+                            tuberculoză, cum ar fi meningita la copii.
+                        </p>
+                    </div>
+                </article>
+                <article class="article">
+                    <header class="article-header">
+                        <h3>Eficacitatea vaccinului</h3>
+                    </header>
+                    <div class="article-body">
+                        <p>
+                            Vaccinul BCG a demonstrat în mod constant o eficacitate de protecție ridicată (peste 70%)
+                            împotriva formelor diseminate de Tuberculoză, inclusiv meningită tuberculoasă și Tuberculoză
+                            miliară. În plus, dovezile din studiile recente sugerează că BCG protejează, de asemenea,
+                            împotriva infecției TBC și a progresiei de la infecție la boală. Pe lângă protecția
+                            împotriva infecțiilor micobacteriene, tot mai multe dovezi indică faptul că vaccinul BCG are
+                            un efect protector împotriva virusurilor, bacteriilor și paraziților prin activarea
+                            limfocitelor heterologe, creșterea imunității înnăscute și a producției de citokine.
+                        </p>
+                        <p>
+                            Vaccinarea este cea mai utilă metodă de prevenție. Vaccinul BCG este administrat la 80%
+                            dintre copiii lumii, în primul rând, în țările cu o prevalență crescută a TBC. Eficacitatea
+                            medie generală este probabil de doar 50%. BCG reduce în mod clar rata TB extratoracică la
+                            copii, în special meningita TB și poate preveni infecția TB.
+                        </p>
+                    </div>
+                </article>
+                <article class="article">
+                    <header class="article-header">
+                        <h3>Ce conţine vaccinul BCG?</h3>
+                    </header>
+                    <div class="article-body">
+                        <p>
+                            Vaccinul BCG conţine tulpina Calmette Guerin de Mycobacterium Bovis viu atenuat (o tulpină
+                            slăbită), având o eficacitate între 0 şi 80%. Pe lângă tulpina de virus viu atenuat,
+                            vaccinul conţine şi glicerină, asparagină, acid citric, potasiu, fosfat, sulfat de magneziu
+                            şi citrat de fier, amoniu. Prepararea finală include şi conţinutul de lactoză. Aceste
+                            ingrediente adăugate sunt în concentraţii foarte mici, urme din aceste substanţe, şi nu sunt
+                            responsabile pentru apariţia unor afecţiuni.
+                        </p>
+                    </div>
+                </article>
+                <article class="article">
+                    <header class="article-header">
+                        <h3>Beneficiile administrării vaccinului BCG</h3>
+                    </header>
+                    <div class="article-body">
+                        <p>
+                            Scăderea mortalităţii în urma contractării bolilor infecţioase este rezultatul progreselor
+                            realizate în domeniul medical, prin descoperirea vaccinării ca mijloc de prevenţie primară a
+                            îmbolnăvirilor.
+                        </p>
+                        <img src="@img/copil.png" alt="copil">
+                        <strong>credit foto: OMS Moldova</strong>
+                        <p>
+                            Un număr foarte mare de boli pot fi prevenite prin vaccinarea de rutină a copilului.
+                            Introducerea, în ultimii ani, pe scară largă, a schemelor de vaccinare şi, prin urmare, şi a
+                            vaccinului BCG, a dus la scăderea dramatică a cazurilor de îmbolnăvire şi deces în urma
+                            infectării.
+                        </p>
+                    </div>
+                </article>
+                <article class="article">
+                    <header class="article-header">
+                        <h3>Riscurile întârzierii sau a refuzului vaccinării</h3>
+                    </header>
+                    <div class="article-body">
+                        <p>
+                            Datorită imunităţii de turmă, atât timp cât o mare majoritate a oamenilor este imunizată în
+                            orice populaţie, chiar şi minoritatea neimunizată va fi protejată. Cu atât de mulţi oameni
+                            protejaţi, o boală infecţioasă nu va avea niciodată şansa de a se manifesta şi de a se
+                            răspândi. Acest lucru este foarte important deoarece întotdeauna va exista o parte din
+                            populaţie (sugari, femei însărcinate, vârstnici şi persoane cu un sistem imunitar slăbit)
+                            căreia nu i se poate administra vaccinuri.
+                        </p>
+                        <p>
+                            Datorită imunităţii de turmă, atât timp cât o mare majoritate a oamenilor este imunizată în
+                            orice populaţie, chiar şi minoritatea neimunizată va fi protejată. Cu atât de mulţi oameni
+                            protejaţi, o boală infecţioasă nu va avea niciodată şansa de a se manifesta şi de a se
+                            răspândi. Acest lucru este foarte important deoarece întotdeauna va exista o parte din
+                            populaţie (sugari, femei însărcinate, vârstnici şi persoane cu un sistem imunitar slăbit)
+                            căreia nu i se poate administra vaccinuri.
+                        </p>
+                        <p>
+                            Nu trebuie să uităm câte decese şi câte boli au prevenit vaccinurile şi nici cum continuă să
+                            ne protejeze de formele potenţial devastatoare, motiv pentru care nu avem voie să întârziem
+                            sau să refuzăm vaccinurile.
+                        </p>
+                    </div>
+                </article>
+                <article class="article">
+                    <header class="article-header">
+                        <h3>Posibile reacții adverse</h3>
+                    </header>
+                    <div class="article-body">
+                        <p>
+                            Ca orice medicament injectabil, vaccinul BCG poate produce durere și iritație la locul
+                            injectării. Efectele secundare cele mai frecvent întâlnite sunt:
+                        </p>
+                        <ol>
+                            <li>
+                                apariţia unei papule mici, roşii, la locul injectării, de obicei în 10-14 zile;
+                            </li>
+                            <li>
+                                noduli în primele 7-21 de zile;
+                            </li>
+                            <li>
+                                adenita supurată (inflamarea ganglionilor limfatici);
+                            </li>
+                            <li>
+                                simptome asemănătoare gripei, timp de 24-48 de ore după vaccinare.
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+                <article class="article">
+                    <header class="article-header">
+                        <h3>Cum s-a dezvoltat vaccinul?</h3>
+                    </header>
+                    <div class="article-body">
+                        <p>
+                            Vaccinul Bacille Callmette-Guérin (BCG) este unul dintre cele mai vechi și mai frecvent
+                            administrate vaccinuri la nivel mondial. Vaccinul a fost dezvoltat de Albert Calmette și
+                            Camille Guérin la începutul anilor 1900 prin atenuarea unei tulpini de Mycobacterium bovis –
+                            o micobacterie strâns legată de Mycobacterium tuberculosis, care cauzează tuberculoza bovină
+                            (TB). Prima utilizare a vaccinului BCG la om în 1921 a fost cu mult înainte ca studiile
+                            preclinice și clinice standardizate să fie necesare. Prima dată când vaccinul BCG a fost
+                            utilizat la oameni a fost la un copil a cărui mamă murise de TBC la doar câteva ore după
+                            naștere. Copilul a fost hrănit cu un amestec de lapte și BCG oral în ziua 3, 5 și 7 după
+                            naștere și a rămas bine în următoarele șase luni.
+                        </p>
+                        <iframe height="550" src="https://www.youtube.com/embed/3ETVAm-mjVo?si=C6Q6AEeCkgWHIigZ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>
+                            Încurajați de acest lucru, alți sugari cu și fără expunere la Tuberculoză au primit BCG în
+                            Franța, cu o urmărire de până la 4 ani, fără dovezi de efecte adverse. Acest lucru a dus la
+                            producția în masă de vaccin BCG la Institutul Pasteur din Lille (Franța), iar Calmette și
+                            colegii de muncă au imunizat ulterior peste 52.000 de copii cu vaccinul BCG în Franța, între
+                            anii 1924 și 1927. Dintre ei, peste 6000 s-au născut în familii cu cazuri de TBC și Calmette
+                            a raportat că BCG a redus mortalitatea TB la sugari de la 25% la mai puțin de 1%.
+                        </p>
+                    </div>
+                </article>
+            </div>
         </div>
-    </div>
-  </main>
-  @@include('./components/footer.html')
+    </main>
+    @@include('./components/footer.html')
 
 
-  <!-- GSAP JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <!-- GSAP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <!-- FSLightbox -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.0.9/index.min.js" integrity="sha512-03Ucfdj4I8Afv+9P/c9zkF4sBBGlf68zzr/MV+ClrqVCBXWAsTEjIoGCMqxhUxv1DGivK7Bm1IQd8iC4v7X2bw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FSLightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.0.9/index.min.js"
+        integrity="sha512-03Ucfdj4I8Afv+9P/c9zkF4sBBGlf68zzr/MV+ClrqVCBXWAsTEjIoGCMqxhUxv1DGivK7Bm1IQd8iC4v7X2bw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <script src="js/app.min.js"></script>
+    <script src="js/app.min.js"></script>
 </body>
 
 </html>

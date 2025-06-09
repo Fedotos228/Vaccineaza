@@ -35,6 +35,9 @@ new Swiper(".slider-hero__body", {
 })
 
 new Swiper(".slider-benefits__body", {
+    autoplay: {
+        delay: 4000,
+    },
     pagination: {
         el: ".slider-benefits-controls__dots",
         dynamicBullets: true,
